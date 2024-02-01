@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm a Photographer</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "stylesheet" href = "style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-wrapper">
+                <img src="./assets/LOGO MEL 2.png" width="120px" height="200px" alt="loading" >
+            </div>
+
+            <ul class="navbar-links">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Sobre Mi</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contactame</a></li>
+            </ul>
+            <button id="toggleNavbar" class="navbar-toggler">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <header id = "header" class = "vh-100 flex">
+            <div class = "header-content">
+                <!--<h1>I'm a <br><span class = "typewrite" data-loop = "yes" data-speed = "100" data-delay = "2000" data-words = '["photographer", "Melanie"]'></span></h1>-->
+
+                <ul class = "social-links">
+                    <li>
+                        <a href = "https://www.instagram.com/photograph.melanie/" target="_blank" >
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "https://ar.pinterest.com/photographmelanieayelen/" target="_blank" >
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- main content -->
+    <main>
+       <!-- work section -->
+<section id="work" class="vh-100 flex py-7">
+    <div class="container">
+        <div class="about-content grid">
+            <div class="about-left">
+                <div class="gallery-card" data-reveal>
+                    <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+                        <img id="workImage" src="./assets/DSC_8190.jpg" loading="lazy" alt="The Drunken"
+                            class="img-cover">
+                    </figure>
+                </div>
+            </div>
+            <div class="about-right">
+                <div class="title">
+                    <h2 id="workTitle">Tu Experiencia Conmigo....</h2>
+                </div>
+                <p id="workText" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+                    facere, temporibus similique nostrum iusto ut dolor quidem error deleniti illum earum id minima,
+                    nihil iure sit illo dolorem, quam vero?</p>
+                    <a id="nextWork" class="btn-next btn-down btn-down-white ab-n">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end of work section -->
+
+
+        <!-- about section -->
+        <section id = "about" class = "about py-7">
+            <div class = "container">
+                <div class = "about-content grid">
+                    <div class = "about-left">
+                        <img src = "./assets/profil-img.jpg" alt = "">
+                    </div>
+                    <div class = "about-right">
+                        <div class = "title">
+                          <h2>Hola soy Melanie</h2>
+                        </div>
+                        <p class = "lead">Bienvenido a este pequeño rincón virtual, aca no solo vas a ver fotos, sino que tambien encontrarás historias. <br>Hace 5 años que soy fotógrafa y me encanta formar parte de cada uno de esos momentos juntos de sonrisas y emociones, junto con mis clientes.<br>Mi misión es hacer que tus recuerdos sean tan vibrantes como el día en que sucedieron.<br>En mi galería vas a ver que aquí no hay poses rígidas ni fotos aburridas. Solo hay autenticidad, risas y momentos congelados en el tiempo.<br><br>Gracias por pasar por acá. Estoy lista para capturar tus recuerdos y convertirlos en tesoros. ¡Hablemos de tu próxima sesión!</p>
+                        <a href = "#portfolio" class = "btn-down">
+                            <i class = "fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of about section -->
+
+        <!-- portfolio section -->
+        <section id = "portfolio" class = "vh-100 py-7">
+            <div class = "container">
+                <div class = "portfolio-content">
+                    <div class = "title">
+                        <h2>my last works</h2>
+                        <a href = "#contact" class = "btn-down">
+                            <i class = "fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+
+                    <div class = "portfolio-grid grid">
+                        <div><img src = "assets/CAR_1531.jpg"></div>
+                        <div><img src = "assets/DSC_7951.jpg"></div>
+                        <div><img src = "assets/CAR_1548.jpg"></div>
+                        <div><img src = "assets/DSC_8139.jpg"></div>
+                        <div><img src = "assets/CAR_1532.jpg"></div>
+                        <div><img src = "assets/DSC_7962.jpg"></div>
+                        <div><img src = "assets/DSC_8247.jpg"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of portfolio section -->
+
+        <!-- contact section -->
+        <section id = "contact" class = "py-7">
+            <div class = "container">
+                <div class = "contact-content flex">
+                    <div class = "contact-left">
+                        <div class="title">
+                            <h2>contactame</h2>
+                            <a href = "#insta" class = "btn-down">
+                                <i class = "fas fa-chevron-down"></i>
+                            </a>
+                        </div>
+                        <p class = "lead"><i class = "fas fa-envelope"></i> melanieayelenmaria@gmail.com</p>
+                        <form action="">
+                            <input type = "text" class = "form-control" placeholder="Tu nombre aquí ...">
+                            <input type = "email" class = "form-control" placeholder="Tu email aquí">
+                            <input type = "submit" class = "btn-submit btn" value = "Enviar">
+                        </form>
+                    </div>
+
+                    <div class = "contact-right">
+                        <img src = "assets/profil-img.jpg" alt = "contact image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of contact section -->
+
+        <!-- instagram section -->
+        <section id = "insta" class = "py-7">
+            <div class = "container">
+                <div class = "insta-content">
+                    <div class = "title">
+                        <h2>instagram</h2>
+                        <a href = "#footer" class = "btn-down btn-down-white">
+                            <i class = "fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                    <div class = "insta-grid grid">
+                        <div><a href = "./index2.html" class = "flex"><img src = "assets/DSC_8180.jpg"></a><h3>Bodas</h3></div>
+                        <div><a href = "./index2.html" class = "flex"><img src = "assets/DSC_8064.jpg"></a><h3>Estudio</h3></div>
+                        <div><a href = "./index2.html" class = "flex"><img src = "assets/DSC_8136.jpg"></a><h3>15 años</h3></div>
+                        <div><a href = "./index2.html" class = "flex"><img src = "assets/DSC_8139.jpg"><h3>Novios</h3></a></div>
+                        <div><a href = "./index2.html" class = "flex"><img src = "assets/DSC_8180.jpg"></a><h3>Familia</h3></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of instagram section -->
+    </main>
+    <!-- end of main content -->
+
+    <!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Columna izquierda -->
+            <div class="footer-column">
+                <ul class="social-links">
+                    <li><a href="https://www.instagram.com/photograph.melanie/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://ar.pinterest.com/photographmelanieayelen/" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- Columna del medio -->
+            <div class="footer-column">
+                <img src="assets/LOGO MEL 2.png" alt="Logo">
+            </div>
+
+            <!-- Columna derecha -->
+            <div class="footer-column">
+                <p>&copy; 2024 Joacoema </p>
+            </div>
+        </div>
+
+        <!-- Línea blanca -->
+        <hr class="footer-divider">
+        <!-- Seis fotos más altas que anchas -->
+        <div class="footer-gallery">
+            <div><a href = "https://www.instagram.com/p/C1cbRn5O_D8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D" class = "flex"><img src = "assets/DSC_8180.jpg"></a></div>
+            <div><a href = "https://www.instagram.com/reel/C1sbn1bu36T/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D" class = "flex"><img src = "assets/DSC_8180.jpg"></a></div>
+            <div><a href = "https://www.instagram.com/reel/CptNV4yuTnH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D" class = "flex"><img src = "assets/DSC_8180.jpg"></a></div>
+            <div><a href = "https://www.instagram.com/p/CkZccehuVKl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D" class = "flex"><img src = "assets/DSC_8180.jpg"></a></div>
+            <div><a href = "https://www.instagram.com/reel/Cpd4F6rOHp8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D" class = "flex"><img src = "assets/DSC_8180.jpg"></a></div>
+            <div><a href = "https://www.instagram.com/reel/Coa38hIO4Nx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D" class = "flex"><img src = "assets/DSC_8180.jpg"></a></div>
+        </div>
+    </div>
+</footer>
+<!-- end of footer -->
+
+
+
+    <!-- typewriting js -->
+    <script src = "main.js"></script>
+    <script src="main2.js"></script>
+</body>
+</html>

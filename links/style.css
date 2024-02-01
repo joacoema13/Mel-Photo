@@ -1,0 +1,58 @@
+body {
+    background-color: #3f372f; /* Color crema para el fondo de la página */
+    color: #f5f5dc; /* Color de texto principal */
+    font-family: 'Arial', sans-serif; /* Tipo de fuente principal */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+img {
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    max-width: 150px; /* Establece un ancho máximo para la imagen */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Ajusta el espacio entre los enlaces */
+}
+
+a {
+    text-decoration: none;
+    color: #f5f5dc; /* Color de texto para los enlaces */
+    padding: 15px 30px; /* Ajusta el padding para hacer los enlaces más largos */
+    background-color: rgba(110, 9, 9, 0.8); /* Color de fondo para los enlaces */
+    border-radius: 20px; /* Hace los enlaces más redondos */
+    transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
+}
+
+a:hover {
+    background-color: rgba(110, 9, 9, 1); /* Cambia el color de fondo al pasar el ratón sobre los enlaces */
+}
+
+.footer {
+    margin-top: 30px;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Ajusta el espacio entre los iconos de redes sociales */
+}
+
+.social-links li a {
+    text-decoration: none;
+    color: #f5f5dc;
+}
