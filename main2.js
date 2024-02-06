@@ -1,6 +1,6 @@
 // Array de rutas de imágenes para el fondo del encabezado
 const backgroundImages = [
-    './assets/HOME/CAR_1494.jpg', './assets/HOME/CAR_2754.jpg', './assets/HOME/CAR_7830.jpg', './assets/HOME/CAR_9565.jpg', './assets/HOME/DSC_8295.jpg', './assets/HOME/MDG_9101.jpg', 'assets/HOME/Diseño-15.png'  
+    './assets/HOME/CAR_1494.jpg', './assets/HOME/CAR_2754.jpg', './assets/HOME/CAR_7830.jpg', './assets/HOME/CAR_9565.jpg', './assets/HOME/DSC_8295.jpg', './assets/HOME/MDG_9101.jpg', 'assets/HOME/Diseño-15.png',
     // Agrega otras rutas de imágenes según sea necesario
 ];
 

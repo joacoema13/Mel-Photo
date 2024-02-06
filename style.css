@@ -85,6 +85,9 @@ h1, h2, h3{
     --smoky-black-3: hsla(0, 3%, 7%, 1);
     --radius-circle: 50%;
     --white: hsla(0, 0%, 100%, 1);
+    --eerie-black-3: hsla(180, 2%, 8%, 1);
+    --weight-bold: 700;
+    --loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, var(--smoky-black-3) 33.33% 50%,  transparent 66.66% 75%);
 }
 .preload {
     position: fixed;
@@ -243,24 +246,27 @@ h1, h2, h3{
 
 /* header */
 #header{
-    background: url('./assets/CAR_1531.jpg') center/cover no-repeat fixed;
-    align-items: flex-end;
-}
-#header .container{
-    width: 100%;
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
 }
 .header-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     padding-bottom: 4rem;
 }
 .social-links {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-top: 3.5rem;
+    margin-top: 2rem; /* Reducir el espacio superior en dispositivos más pequeños */
+
 }
 
 .social-links li {
-    list-style: none; /* Quitar los puntos de la lista */
+    margin-right: 1rem;
 }
 
 .social-links li a {
