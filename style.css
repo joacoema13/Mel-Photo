@@ -417,6 +417,9 @@ h1, h2, h3{
         width: 100%; /* Asegura que cada elemento ocupe todo el ancho disponible */
         text-align: center; /* Centra el contenido de cada elemento */
     }
+    #work {
+        background-size: auto; /* Restaura la adaptación automática de la imagen de fondo en dispositivos móviles */
+    }
 }
 
 
@@ -519,7 +522,6 @@ h1, h2, h3{
 /* footer */
 #footer {
     background: linear-gradient(rgba(110, 9, 9, 0.5), rgba(110, 9, 9, 0.3)), url('./assets/MDG_8708.jpg') center/cover no-repeat fixed;
-    background-position: center;
     background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
     min-height: 65vh;
     color: white;
@@ -532,8 +534,9 @@ h1, h2, h3{
     #footer {
         background-size: auto; /* Restaura la adaptación automática de la imagen de fondo en dispositivos móviles */
     }
-    .footer-gallery div {
-        display: none; /* Oculta las imágenes del footer en dispositivos móviles */
+
+    .footer-gallery div{
+        display: none; /* Oculta las imágenes con los enlaces en dispositivos móviles */
     }
 }
 
@@ -595,9 +598,6 @@ h1, h2, h3{
     object-fit: cover;
 }
 
-/* Agrega estilos adicionales según sea necesario */
-
-
 /* Media Queries */
 
 
@@ -628,9 +628,6 @@ h1, h2, h3{
     }
     .contact-left form .form-control{
         max-width: 500px;
-    }
-    .footer-content ul{
-        flex-direction: row;
     }
 
 }
