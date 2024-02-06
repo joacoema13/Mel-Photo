@@ -7,104 +7,114 @@
     <title>I'm a Photographer</title>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "style2.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
-<body>
-    <!-- header -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo-wrapper">
-                <img src="./assets/LOGO MEL 2.png" width="120px" height="200px" alt="loading" >
-            </div>
+<body> <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">photographMelanieayelen</p>
+  </div>
 
-            <ul class="navbar-links">
-                <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="./index.html">Sobre Mi</a></li>
-                <li class="nav-item"><a class="nav-link" href="./index.html">Galeria</a></li>
-                <li class="nav-item"><a class="nav-link" href="./index.html">Contactame</a></li>
+<!-- header -->
+<nav class="navbar">
+    <div class="container">
+        <div class="logo-wrapper">
+            <img src="./assets/LOGO MEL 2.png" width="120px" height="200px" alt="loading" >
+        </div>
+
+        <ul class="navbar-links">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Sobre Mi</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Galeria</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Contactame</a></li>
+        </ul>
+        <button id="toggleNavbar" class="navbar-toggler">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</nav>
+<header id = "header" class = "vh-100 flex">
+        <div class = "header-content">
+
+            <ul class = "social-links">
+                <li>
+                    <a href = "https://www.instagram.com/photograph.melanie/" target="_blank" >
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href = "https://ar.pinterest.com/photographmelanieayelen/" target="_blank" >
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                </li>
             </ul>
-            <button id="toggleNavbar" class="navbar-toggler">
-                <i class="fas fa-bars"></i>
-            </button>
         </div>
-    </nav>
-    <header id = "header" class = "vh-100 flex">
-            <div class = "header-content">
-                <!--<h1>I'm a <br><span class = "typewrite" data-loop = "yes" data-speed = "100" data-delay = "2000" data-words = '["photographer", "Melanie"]'></span></h1>-->
-
-                <ul class = "social-links">
-                    <li>
-                        <a href = "https://www.instagram.com/photograph.melanie/" target="_blank" >
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href = "https://ar.pinterest.com/photographmelanieayelen/" target="_blank" >
-                            <i class="fab fa-pinterest"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <!-- end of header -->
+</header>
+<!-- end of header -->
 
     <!-- main content -->
     <main>
+        <!-- Agrega el siguiente HTML al cuerpo de tu documento -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
                <!-- portfolio section -->
-               <section id = "portfolio" class = "vh-100 py-7">
+        <section id = "portfolio" class = "vh-100 py-7">
             
-                <div class = "portfolio-content">
-                    <div class = "title">
-                        <h2>ALL Photos</h2>
-                        <a href = "#contact" class = "btn-down">
-                            <i class = "fas fa-chevron-down"></i>
-                        </a>
-                    </div>
+            <div class = "portfolio-content">
+                <div class = "title">
+                    <h2>my last works</h2>
+                    <a href = "#contact" class = "btn-down">
+                        <i class = "fas fa-chevron-down"></i>
+                    </a>
+                </div>>
 
-                <div class="grid-gallery">
-                    <div class="grid-item">
-                      <img src="assets/MI ULTIMO TRABAJO/MDG_0704.jpg" />
+            <div class="grid-gallery">
+                <div class="grid-item">
+                  <img src="assets/MI ULTIMO TRABAJO/MDG_0704.jpg" />
+                </div>
+                <div class="grid-item">
+                  <img src="assets/MI ULTIMO TRABAJO/MDG_0981.jpg" />
+                </div>
+                <div class="grid-item">
+                  <img src="assets/MI ULTIMO TRABAJO/MDG_1145.jpg" />
+                </div>
+                <div class="grid-item">
+                  <img src="assets/MI ULTIMO TRABAJO/MDG_1412.jpg" />
+                </div>
+                <div class="grid-item">
+                  <img src="assets/MI ULTIMO TRABAJO/MDG_1728.jpg" />
+                </div>
+                <div class="grid-item">
+                  <img src="assets/MI ULTIMO TRABAJO/MDG_9125.jpg" />
+                </div>
+                <div class="grid-item">
+                  <img src="assets/MI ULTIMO TRABAJO/MDG_9151.jpg" />
+                </div>
+                <div class="grid-item">
+                    <img src="assets/GALERIA/CAR_2775.jpg" />
+                  </div>
+                  <div class="grid-item">
+                      <img src="assets/GALERIA/Diseño sin título (2).png" />
                     </div>
                     <div class="grid-item">
-                      <img src="assets/MI ULTIMO TRABAJO/MDG_0981.jpg" />
-                    </div>
-                    <div class="grid-item">
-                      <img src="assets/MI ULTIMO TRABAJO/MDG_1145.jpg" />
-                    </div>
-                    <div class="grid-item">
-                      <img src="assets/MI ULTIMO TRABAJO/MDG_1412.jpg" />
-                    </div>
-                    <div class="grid-item">
-                      <img src="assets/MI ULTIMO TRABAJO/MDG_1728.jpg" />
-                    </div>
-                    <div class="grid-item">
-                      <img src="assets/MI ULTIMO TRABAJO/MDG_9125.jpg" />
-                    </div>
-                    <div class="grid-item">
-                      <img src="assets/MI ULTIMO TRABAJO/MDG_9151.jpg" />
-                    </div>
-                    <div class="grid-item">
-                        <img src="assets/HOME/MDG_0605.jpg" />
+                        <img src="assets/GALERIA/DSC_8107.jpg" />
                       </div>
                       <div class="grid-item">
-                          <img src="assets/HOME/MDG_1483.jpg" />
+                          <img src="assets/GALERIA/MDG_1334.jpg" />
                         </div>
-                        <div class="grid-item">
-                            <img src="assets/TESTIMONIOS/CAR_7728.jpg" />
-                          </div>
-                          <div class="grid-item">
-                              <img src="assets/TESTIMONIOS/MDG_1207.jpg" />
-                            </div>
-                  </div>
-            
-        </section>
-        <!-- end of portfolio section -->
+              </div>
+        
+    </section>
+    <!-- end of portfolio section -->
     </main>
     <!-- end of main content -->
 
-    <!-- Footer -->
+   <!-- Footer -->
 <footer id="footer">
     <div class="container">
         <div class="footer-content">
@@ -143,9 +153,9 @@
 <!-- end of footer -->
 
 
-
     <!-- typewriting js -->
     <script src = "main.js"></script>
     <script src="main2.js"></script>
+    <script src="main3.js"></script>
 </body>
 </html>
