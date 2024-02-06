@@ -328,6 +328,7 @@ h1, h2, h3{
 /* work */
 #work{
     background: linear-gradient(rgba(110, 9, 9, 0.5), rgba(110, 9, 9, 0.3)), url('./assets/MDG_8708.jpg') center/cover no-repeat fixed;
+    background-position: center;
     color: var(--light-color);   
 }
 #work .title h2, #work h3{
@@ -439,6 +440,7 @@ h1, h2, h3{
 /* footer */
 #footer {
     background: linear-gradient(rgba(110, 9, 9, 0.5), rgba(110, 9, 9, 0.3)), url('./assets/MDG_8708.jpg') center/cover no-repeat fixed;
+    background-position: center;
     min-height: 65vh;
     color: white;
     padding: 20px 0;
