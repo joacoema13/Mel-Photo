@@ -295,6 +295,20 @@ h1, h2, h3{
     margin-bottom: 4rem;
     overflow: hidden;
 }
+/* Estilo para dispositivos móviles */
+@media (max-width: 768px) {
+    #about .about-content.grid {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección del flexbox a columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    #about .about-left,
+    #about .about-right {
+        width: 100%; /* Asegura que cada elemento ocupe todo el ancho disponible */
+        text-align: center; /* Centra el contenido de cada elemento */
+    }
+}
 /* button down and title -reusable */
 .btn-down{
     font-size: 3rem;
@@ -326,20 +340,85 @@ h1, h2, h3{
     font-family: 'Poppins';
 }
 /* work */
-#work{
+#work {
     background: linear-gradient(rgba(110, 9, 9, 0.5), rgba(110, 9, 9, 0.3)), url('./assets/MDG_8708.jpg') center/cover no-repeat fixed;
-    background-position: center;
-    color: var(--light-color);   
+    background-size: cover; /* Hace que la imagen de fondo se ajuste a todo el contenedor */
+    color: var(--light-color);
+    padding: 50px 0; /* Añade un poco de espacio arriba y abajo */
+    display: flex; /* Usa flexbox para alinear los elementos */
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Centra el contenido */
 }
-#work .title h2, #work h3{
+
+#work .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Añade un poco de espacio a los lados */
+}
+
+#work .title h2,
+#work h3 {
     color: var(--light-color);
 }
-#work .title h2::after{
+
+#work .title h2::after {
     background: var(--light-color);
 }
+
 .ab-n {
     color: var(--light-color);
 }
+/* Estilo para la imagen */
+.about-content .about-left img {
+    max-width: 100%; /* Haz que la imagen ocupe todo el ancho disponible */
+    max-height: 100%; /* Ajusta la altura automáticamente */
+    width: auto; /* Ancho automático para mantener la proporción */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+/* Estilo para el contenido */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content .about-left,
+.about-content .about-right {
+    width: 50%; /* Divide el espacio en dos partes iguales */
+}
+
+.about-content .about-left {
+    text-align: right; /* Alinea el contenido a la derecha */
+    padding-right: 20px; /* Añade espacio entre la imagen y el texto */
+}
+
+.about-content .about-right {
+    text-align: left; /* Alinea el contenido a la izquierda */
+    padding-left: 20px; /* Añade espacio entre el texto y la imagen */
+}
+
+.about-content .about-left img {
+    max-width: 100%; /* Haz que la imagen ocupe todo el ancho disponible */
+    height: auto; /* Haz que la altura se ajuste automáticamente */
+}
+
+/* Estilo para dispositivos móviles */
+@media (max-width: 768px) {
+    #work .about-content.grid {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección del flexbox a columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    #work .about-left,
+    #work .about-right {
+        width: 100%; /* Asegura que cada elemento ocupe todo el ancho disponible */
+        text-align: center; /* Centra el contenido de cada elemento */
+    }
+}
+
 
 /* portfolio */
 
@@ -441,10 +520,21 @@ h1, h2, h3{
 #footer {
     background: linear-gradient(rgba(110, 9, 9, 0.5), rgba(110, 9, 9, 0.3)), url('./assets/MDG_8708.jpg') center/cover no-repeat fixed;
     background-position: center;
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
     min-height: 65vh;
     color: white;
     padding: 20px 0;
     text-align: center;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    #footer {
+        background-size: auto; /* Restaura la adaptación automática de la imagen de fondo en dispositivos móviles */
+    }
+    .footer-gallery div {
+        display: none; /* Oculta las imágenes del footer en dispositivos móviles */
+    }
 }
 
 #footer .container {
