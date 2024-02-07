@@ -292,6 +292,21 @@ h1, h2, h3{
 
 
 /* portfolio */
+.portfolio-content {
+    text-align: center; /* Alinea el contenido al centro */
+}
+
+.title {
+    margin-bottom: 20px; /* Espacio inferior para separar el título del siguiente elemento */
+}
+
+.title h2 {
+    margin-bottom: 10px; /* Espacio inferior para separar el título del botón */
+}
+
+.btn-down {
+    display: inline-block; /* Asegura que el botón esté en línea con el título */
+}
 
 .grid-gallery {
     width: 100%;

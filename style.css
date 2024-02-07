@@ -424,6 +424,21 @@ h1, h2, h3{
 
 
 /* portfolio */
+.portfolio-content {
+    text-align: center; /* Alinea el contenido al centro */
+}
+
+.title {
+    margin-bottom: 20px; /* Espacio inferior para separar el título del siguiente elemento */
+}
+
+.title h2 {
+    margin-bottom: 10px; /* Espacio inferior para separar el título del botón */
+}
+
+.btn-down {
+    display: inline-block; /* Asegura que el botón esté en línea con el título */
+}
 
 .grid-gallery {
     width: 100%;
@@ -475,9 +490,35 @@ h1, h2, h3{
     }
   }
 
+
+  .ver-mas {
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin-top: 20px; /* Ajusta el margen superior */
+}
+
+.btn-ver-mas a{
+    padding: 10px 20px; /* Ajusta el relleno del botón */
+    font-size: 16px; /* Ajusta el tamaño del texto */
+    background-color: rgba(110, 9, 9, 1); /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Quita el borde del botón */
+    border-radius: 5px; /* Agrega bordes redondeados al botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.btn-ver-mas a:hover {
+    background-color: rgba(110, 9, 9, 0.3); /* Cambia el color de fondo al pasar sobre el botón */
+}
+
 /* contact */
 #contact{
     background-color: rgb(248, 248, 248);
+}
+.contact-right img {
+    max-width: 100%; /* Haz que la imagen ocupe todo el ancho disponible */
+    max-height: 80%; /* Ajusta la altura automáticamente */
+    width: auto; /* Ancho automático para mantener la proporción */
+    height: auto; /* Altura automática para mantener la proporción */
 }
 .contact-content{
     flex-direction: column;
@@ -517,6 +558,17 @@ h1, h2, h3{
 .contact-left .btn-submit:hover{
     background-color: #000;
 }
+.form-control-message {
+    display: block;
+    margin-bottom: 1.6rem; /* Cambia el margen inferior para separar los campos */
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    width: 100%;
+    height: 100px; /* Establece una altura fija */
+    resize: none; /* Desactiva la capacidad de redimensionamiento */
+}
+
+
 
 
 /* footer */
