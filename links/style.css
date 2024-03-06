@@ -1,8 +1,7 @@
 body {
-    background-color: #3f372f; /* Color crema para el fondo de la página */
-    color: #f5f5dc; /* Color de texto principal */
-    font-family: 'Arial', sans-serif; /* Tipo de fuente principal */
-    margin: 0;
+    background-color: #3f372f;
+    color: #f5f5dc;
+    font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,47 +11,131 @@ body {
 
 .header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-top: 20px; /* Reducir el margen superior */
+    margin-bottom: 30px; /* Ajustar el margen inferior */
 }
 
-img {
-    border-radius: 50%; /* Hace que la imagen sea redonda */
-    max-width: 150px; /* Establece un ancho máximo para la imagen */
-    height: auto;
-    margin-bottom: 20px;
+.header p {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.img {
+    text-align: center;
+    margin-bottom: 30px; /* Reducir el margen inferior */
+}
+
+.img img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px; /* Ajusta el espacio entre los enlaces */
+    text-align: center;
+    margin-bottom: 30px; /* Ajustar el margen inferior */
 }
 
-a {
+.links div {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.links a {
+    display: block;
     text-decoration: none;
-    color: #f5f5dc; /* Color de texto para los enlaces */
-    padding: 15px 30px; /* Ajusta el padding para hacer los enlaces más largos */
-    background-color: rgba(110, 9, 9, 0.8); /* Color de fondo para los enlaces */
-    border-radius: 20px; /* Hace los enlaces más redondos */
-    transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
+    color: #f5f5dc;
+    padding: 15px 30px;
+    background-color: rgba(110, 9, 9, 0.8);
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
 }
 
-a:hover {
-    background-color: rgba(110, 9, 9, 1); /* Cambia el color de fondo al pasar el ratón sobre los enlaces */
+.links a:hover {
+    background-color: rgba(110, 9, 9, 1);
 }
 
 .footer {
+    text-align: center;
     margin-top: 30px;
 }
 
 .social-links {
     list-style: none;
     display: flex;
-    gap: 20px; /* Ajusta el espacio entre los iconos de redes sociales */
+    gap: 20px;
+    justify-content: center;
 }
 
 .social-links li a {
     text-decoration: none;
     color: #f5f5dc;
+    font-size: 24px;
+}
+/* Estilos generales */
+body {
+    background-color: #3f372f;
+    color: #f5f5dc;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilos para dispositivos de pantalla pequeña */
+@media screen and (max-width: 768px) {
+    .header p {
+        max-width: 90%; /* Cambia el ancho máximo del párrafo para dispositivos pequeños */
+    }
+
+    .img img {
+        width: 100px; /* Reduzca el tamaño de la imagen para dispositivos pequeños */
+        height: 100px;
+    }
+
+    .links div {
+        width: 150px; /* Cambia el ancho de los enlaces para dispositivos pequeños */
+    }
+
+    .links a {
+        padding: 10px 20px; /* Ajusta el relleno de los enlaces para dispositivos pequeños */
+        font-size: 14px; /* Reduzca el tamaño del texto de los enlaces para dispositivos pequeños */
+    }
+
+    .social-links li a {
+        font-size: 20px; /* Reduzca el tamaño de los iconos sociales para dispositivos pequeños */
+    }
+}
+
+/* Estilos para dispositivos de pantalla mediana */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .header p {
+        max-width: 80%; /* Cambia el ancho máximo del párrafo para dispositivos medianos */
+    }
+
+    .img img {
+        width: 120px; /* Reduzca el tamaño de la imagen para dispositivos medianos */
+        height: 120px;
+    }
+
+    .links div {
+        width: 180px; /* Cambia el ancho de los enlaces para dispositivos medianos */
+    }
+}
+
+/* Estilos para dispositivos de pantalla grande */
+@media screen and (min-width: 1025px) {
+    .header p {
+        max-width: 600px; /* Restablece el ancho máximo del párrafo para dispositivos grandes */
+    }
+
+    .img img {
+        width: 150px; /* Restablece el tamaño de la imagen para dispositivos grandes */
+        height: 150px;
+    }
+
+    .links div {
+        width: 200px; /* Restablece el ancho de los enlaces para dispositivos grandes */
+    }
 }
