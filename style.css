@@ -368,6 +368,9 @@ h1, h2, h3{
 .ab-n {
     color: var(--light-color);
 }
+#workText {
+    font-size: 1.5em;
+}
 /* Estilo para la imagen */
 .about-content .about-left img {
     max-width: 100%; /* Haz que la imagen ocupe todo el ancho disponible */
@@ -383,9 +386,11 @@ h1, h2, h3{
     justify-content: center;
 }
 
-.about-content .about-left,
+.about-content .about-left{
+    width: 40%;
+}
 .about-content .about-right {
-    width: 50%; /* Divide el espacio en dos partes iguales */
+    width: 60%; /* Divide el espacio en dos partes iguales */
 }
 
 .about-content .about-left {

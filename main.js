@@ -46,17 +46,17 @@ function scrollFunction() {
 const dynamicContent = [
   {
       image: "./assets/TESTIMONIOS/MDG_1207.jpg",
-      title: "SESION DE FOTOS EN STUDIO",
-      text: '¡Mel te pasaste! La verdad que estoy impactada, me encanto la calidad de las fotos. Me re gustaron y me hiciste sentir muy bien en la sesión. Muchas gracias!'
+      title: "SESIÓN DE FOTOS EN STUDIO",
+      text: '¡Mel, te pasaste! La verdad es que estoy impactada, me encantó la calidad de las fotos. Me gustaron muchísimo y me hiciste sentir muy bien durante la sesión. ¡Muchas gracias!'
   },
   {
       image: "assets/TESTIMONIOS/MDG_9098.jpg",
       title: "AGUS Y HUGO BODA",
-      text: "¡Quedaron hermosas! hermoso trabajo y gracias nuevamente por la buena onda. Sos una genia estoy segura de que vas a tener éxitos en todo. Estamos felices"
+      text: "¡Quedaron hermosas! hermoso trabajo y gracias nuevamente por la buena onda. Sos una genia estoy segura de que vas a tener éxito en todo. Estamos felices"
   },
   {
     image: "assets/TESTIMONIOS/CAR_7728.jpg",
-    title: "Sesion Familia Felix",
+    title: "SESIÓN FAMILIA FELIX",
     text: "El trabajo de Mel es admirable. Su paciencia, su creatividad y compromiso son notables. Quedamos muy conformes con su trabajo y la recomendamos sin dudarlo."
 }
   // Agrega más objetos según sea necesario
